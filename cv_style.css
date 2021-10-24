@@ -1,0 +1,574 @@
+/*FONTS*/
+@font-face {
+	font-family: 'CooperBook';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/CooperHewitt-Book.otf') format('truetype');
+}
+  
+@font-face {
+	font-family: 'CooperMedium';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/CooperHewitt-Medium.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CooperThin';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/CooperHewitt-Thin.otf') format('truetype');
+}
+
+/*CORPS DE PAGE*/
+body {
+	font-family: 'CooperMedium', sans-serif;
+	background-color: #DDDEE0;
+	margin: 0 auto 0 auto;
+}
+
+/*TETE DE PAGE*/
+header {
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.photo_cv {
+	width: 353px;
+	height: 300px;
+	background-color: #0099CB;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo_cv img {
+	border-radius: 50%;
+	border: 6px solid white;
+}
+
+.nom_cv {
+	width: 847px;
+	height: 300px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.nom_cv span {
+	font-family: 'CooperBook';
+}
+
+h1 {
+	color: #0099CB;
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+}
+
+h2 {
+	font-size: 20px;
+	color: #828284;
+	text-align: center;
+	font-family: 'CooperThin';
+	margin: 0;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/*CONTENEUR PRINCIPAL */
+main {
+	width:1200px;
+	display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*MENU DE GAUCHE*/
+aside {
+	width: 383px;
+	background-color: #0099CB;
+	position: relative;
+}
+
+.title_mnu {
+	background-color: black;
+	color: white;
+	height: 50px;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+
+h3 {
+	padding: 0 0 0 20px;
+	margin: auto 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.contact, .competences, .apropos {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact p, .competences p {
+	display:flex;
+	align-items: center;
+	text-align: left;
+	padding-left: -10px;
+	color: white;
+}
+
+.competences p {
+	margin: 10px 0;
+}
+
+.contact a, .pdf a, .pdf_tab a {
+	color:white;
+	text-decoration: none;
+}
+
+.contact a:hover, .pdf a:hover, .pdf_tab:hover {
+	color:white;
+	text-decoration: underline;
+}
+
+.contact img  {
+	background: #206285;
+	padding: 10px;
+	margin: 0;
+	border-radius: 50%;
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+}
+
+.pdf_tab {
+	display: none;
+}
+
+.pdf {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+}
+
+.pdf img, .pdf_tab img {
+	padding: 0 10px;
+	margin: 0;
+	width: 24px;
+	height: 24px;
+}
+.pdf p, .pdf_tab p  {
+	display: flex;
+	align-items: center;
+	background: #206285;
+	padding: 10px 20px 10px 10px;
+	margin: 0;
+	border-radius: 10px;
+	height: 24px;
+	margin: 0 10px;
+}
+
+.apropos p {
+	text-align: justify;
+	color: white;
+	font-family: 'CooperBook';
+}
+
+.loisir {
+	padding: 20px 20px 20px 0;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.loisir div {
+	display: flex;
+	align-items: center;
+}
+
+.ico_loisir {
+	margin-right: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	background-color: #949599;
+	padding: 10px;
+    margin: 10px;
+}
+
+.ico_loisir img {
+	width:36px;
+	height:36px;
+}
+
+.name_loisir {
+	color: #949599;
+	font-family: 'CooperThin';
+	padding-left: 10px;
+}
+
+/*CONTENU DE LA PAGE*/
+article {
+	width: 847px;
+	padding: 0 0 20px 65px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.title_article {
+	height: 50px;
+	text-transform: uppercase;
+	border-bottom: 2px #0099CB solid;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #EBECEE;
+}
+
+.title_article h2 {
+	color: #0099CB;
+	font-family:'CooperMedium'
+}
+
+.icon_title {
+	color:#0099CB;
+	margin-left: 18px;
+	margin-right: 18px;
+	font-size: 30px;
+}
+
+.formation, .expe_pro {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.date_formation, .date_expe_pro {
+	display: flex;
+	flex-direction: row;
+  	align-items: baseline;
+  	font-weight: bold;
+	font-size: 1em;	
+	color: #505052;
+	font-family: 'CooperBook';  
+}
+
+.detail_formation, .detail_expe_pro {
+	padding-left: 20px;
+	width:70%;
+}
+
+.detail_formation p, .detail_expe_pro p {
+	color:#828284;
+	font-family: 'CooperThin';
+}
+
+.detail_formation h3, .detail_expe_pro h3 {
+	padding: 0;
+	color: #505052;
+	font-family: 'CooperMedium';
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.detail_formation h4, .detail_expe_pro h4 {
+	padding: 0;
+	color: #0099CB;
+	font-family: 'CooperBook';
+	font-size: 18px;
+	margin: 0;
+}
+
+ul {
+	margin-top: 0;
+	padding-left: 18px;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	color:#828284;
+	font-size: 16px;
+	font-family: 'CooperThin';
+}
+
+.ProjectLink {
+	text-decoration: none;
+	color: #505052;
+}
+
+.ProjectLink:hover {
+	text-decoration: underline;
+}
+
+h5 {
+	padding: 0;
+	margin: 4px 0 0 0;
+	color: #828284;
+}
+
+.recomm {
+	display: flex;
+	justify-content: space-around;
+}
+
+.dot_circle {
+	color: #0099CB;
+	font-size: 20px;
+	margin-right: 18px;
+}
+
+.circle {
+	color: #0099CB;
+	font-size: 15px;
+	margin-right: 23px;
+}
+
+.level_ok {
+	color: white;
+	font-size: 14px;
+}
+
+.level_nok {
+	color: #206285;
+	font-size: 14px;
+}
+
+.level_soft {
+	color: white;
+	font-size: 10px;
+}
+
+.skill {
+	display:flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 25px;
+}
+
+.skill_name {
+	width: 50%; 
+	display: flex; 
+	justify-content: space-between;
+}
+
+.skill_level {
+	width: 40%; 
+	display: flex; 
+	justify-content: space-between;
+}
+
+.dating {
+	display: block;
+}
+.dating p {
+	margin: 0 0 5px 0;
+}
+
+.adating {
+	display: none;
+}
+
+/* règles au format responsive avec les media queries */
+@media all and (max-width: 900px)
+{
+  body {
+	margin: 0;
+  }
+
+  header {
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  h2 {
+    height: auto;
+  }
+  
+  h3 {
+	padding: 0; 
+  }
+  .photo_cv:nth-child(1) {
+    order: 2;
+	width: auto;
+	height: auto;
+	padding: 10px;
+  }
+  
+  .photo_cv img {
+	margin: 10px 0;
+  }
+  
+  .nom_cv:nth-child(2) {
+    order: 1;
+    width: auto;
+    margin: 0;
+    padding: 10px 0 15px 0;
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+
+  aside {
+    width: auto;
+    margin: auto;
+  }
+
+  .apropos, .contact, .loisir {
+    padding: 10px;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+  
+  #div_loisir {
+	position: relative;
+  }
+
+  article {
+	width: auto;
+	height:auto;
+    margin: auto;
+    padding: 15px;
+  }
+
+  .title_mnu {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+
+  .title_article {
+	justify-content: center;
+  }
+
+  .formation, .expe_pro {
+    flex-direction: column;
+	justify-content: space-between;
+  }
+
+  .detail_formation, .detail_expe_pro {
+	width: auto;
+	padding: 0 15px;
+  }
+  
+  .recomm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dating {
+	display: flex;
+  }
+
+  .adating {
+	  display: block;
+  }
+
+  .skill {
+	  width: auto;
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .skill_name {
+	  width: 20%;
+  }
+
+  .skill_level {
+	  width: 20%;
+  }
+
+  .level_soft {
+	  display: none;
+  }
+
+  .pdf {
+	  display: none;
+  }
+
+  .pdf_tab {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+  }
+
+}
+
+@media all and (max-width: 500px)
+{
+ .detail_expe_pro, .detail_formation {
+	padding: 0;
+ }
+
+ .loisir {
+	flex-direction: column;
+	padding: 15px 0 0 0;
+ }
+ 
+ .loisir div {
+	padding-bottom: 5px;
+ }
+	
+ .title_article h2 {
+	font-size: 19px;
+ }
+
+ .icon_title {
+	display: none;
+ }
+
+ .skill {
+	display:flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ .skill_name {
+	width: 50%; 
+	display: flex; 
+	justify-content: space-between;
+ } 
+
+ .skill_level {
+	width: 40%; 
+	display: flex; 
+	justify-content: space-between;
+ }
+ 
+ .level_soft {
+	 display: block;
+ }
+}
