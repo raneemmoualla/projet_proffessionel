@@ -155,7 +155,7 @@ h3 {
 }
 
 .pdf_tab {
-	display: none;
+	display: flex;
 }
 
 .pdf {
