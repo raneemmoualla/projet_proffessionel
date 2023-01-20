@@ -22,11 +22,9 @@
 
 /*CORPS DE PAGE*/
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'CooperMedium', sans-serif;
 	background-color: #DDDEE0;
 	margin: 0 auto 0 auto;
-	font-size: large;
-	font-weight: bold;
 }
 
 /*TETE DE PAGE*/
